@@ -4,15 +4,25 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:integration": "mocha test/integration/*.js"
   },
   "repository": "git@github.com:3salles/Node-API.git",
   "author": "Beatriz <beatrizsallesss@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/register": "^7.12.1",
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "supertest": "^6.0.1"
   }
 }
